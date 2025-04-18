@@ -1,6 +1,6 @@
 {
   "name": "cdk-global-parameter",
-  "description": "CDK Contstruct that creates a globally replicated SSM parameter.",
+  "description": "CDK Contstruct that creates a globally replicated Systems Manager String Parameter.",
   "repository": {
     "type": "git",
     "url": "https://github.com/nickwillan/cdk-global-parameter.git"
@@ -66,8 +66,9 @@
   "keywords": [
     "aws",
     "cdk",
-    "kms",
-    "secrets"
+    "parameter",
+    "serverless,",
+    "ssm"
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
