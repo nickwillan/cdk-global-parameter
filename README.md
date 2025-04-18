@@ -46,8 +46,8 @@ This will create a Systems Manager String Parameter with the specified name, val
 The `GlobalStringParameter` construct supports the following configuration options:
 
 - `parameterProps`: [StringParameterProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ssm.StringParameterProps.html) - The properties for the parameter to be created.
-- `tags`: { [key: string]: string }[]; - Optional tags to be added to the parameter.
-- `regions`: string[] - The list of AWS regions where the parameter should be created.
+- `tags`: { [key: string]: string }[]; - Optional tags to be added to the string parameter.
+- `regions`: string[] - The list of AWS regions where the string parameter should be created.
 
 ## FAQs
 
