@@ -48,7 +48,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '.project',
     '.idea',
     '.settings',
-    '.vscode/',
     '*.iml',
   ],
   releaseToNpm: true,
