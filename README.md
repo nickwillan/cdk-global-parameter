@@ -5,7 +5,7 @@
 [![AWS: CDK Construct](https://img.shields.io/badge/aws-cdk_construct-FF9900?&logo=AmazonAWS)](.)
 [![Test Coverage](https://img.shields.io/badge/coverage-100%25-22BC22?style=flat&logo=jest)](.)
 
-The `cdk-global-parameter` is a CDK (AWS Cloud Development Kit) Construct that allows users to create a Systems Manager String Parameter in multiple AWS regions.
+The `cdk-global-parameter` is a CDK (AWS Cloud Development Kit) Construct that allows users to create a Systems Manager String Parameter and replicated to additional AWS regions.
 
 ## Table of Contents
 
@@ -35,7 +35,7 @@ const globalParameter = new GlobalStringParameter(this, 'MyGlobalParameter', {
     description: 'A global parameter example',
   },
   tags: [{ Key: 'key1', Value: 'value1' }],
-  regions: ['us-east-1', 'us-west-2'],
+  replicaRegions: ['us-east-1', 'us-west-2'],
 });
 ```
 
@@ -46,8 +46,8 @@ This will create a Systems Manager String Parameter with the specified name, val
 The `GlobalStringParameter` construct supports the following configuration options:
 
 - `parameterProps`: [StringParameterProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ssm.StringParameterProps.html) - The properties for the parameter to be created.
-- `tags`: { [key: string]: string }[]; - Optional tags to be added to the string parameter.
-- `regions`: string[] - The list of AWS regions where the string parameter should be created.
+- `tags`: { [key: string]: string }[]; - Optional tags to be added to the regional replicated string parameter.
+- `replicaRegions`: `string[]` - The list of AWS regions where the string parameter should be created.
 
 ## FAQs
 
