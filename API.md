@@ -101,6 +101,7 @@ Any object.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#cdk-global-parameter.GlobalStringParameter.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#cdk-global-parameter.GlobalStringParameter.property.stringParameter">stringParameter</a></code> | <code>aws-cdk-lib.aws_ssm.StringParameter</code> | *No description.* |
 
 ---
 
@@ -113,6 +114,16 @@ public readonly node: Node;
 - *Type:* constructs.Node
 
 The tree node.
+
+---
+
+##### `stringParameter`<sup>Required</sup> <a name="stringParameter" id="cdk-global-parameter.GlobalStringParameter.property.stringParameter"></a>
+
+```typescript
+public readonly stringParameter: StringParameter;
+```
+
+- *Type:* aws-cdk-lib.aws_ssm.StringParameter
 
 ---
 
@@ -136,7 +147,8 @@ const globalStringParameterProps: GlobalStringParameterProps = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#cdk-global-parameter.GlobalStringParameterProps.property.parameterProps">parameterProps</a></code> | <code>aws-cdk-lib.aws_ssm.StringParameterProps</code> | *No description.* |
-| <code><a href="#cdk-global-parameter.GlobalStringParameterProps.property.regions">regions</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#cdk-global-parameter.GlobalStringParameterProps.property.replicaRegions">replicaRegions</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#cdk-global-parameter.GlobalStringParameterProps.property.existingStringParamObj">existingStringParamObj</a></code> | <code>aws-cdk-lib.aws_ssm.StringParameter</code> | *No description.* |
 | <code><a href="#cdk-global-parameter.GlobalStringParameterProps.property.tags">tags</a></code> | <code>{[ key: string ]: string}[]</code> | *No description.* |
 
 ---
@@ -151,13 +163,23 @@ public readonly parameterProps: StringParameterProps;
 
 ---
 
-##### `regions`<sup>Required</sup> <a name="regions" id="cdk-global-parameter.GlobalStringParameterProps.property.regions"></a>
+##### `replicaRegions`<sup>Required</sup> <a name="replicaRegions" id="cdk-global-parameter.GlobalStringParameterProps.property.replicaRegions"></a>
 
 ```typescript
-public readonly regions: string[];
+public readonly replicaRegions: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `existingStringParamObj`<sup>Optional</sup> <a name="existingStringParamObj" id="cdk-global-parameter.GlobalStringParameterProps.property.existingStringParamObj"></a>
+
+```typescript
+public readonly existingStringParamObj: StringParameter;
+```
+
+- *Type:* aws-cdk-lib.aws_ssm.StringParameter
 
 ---
 

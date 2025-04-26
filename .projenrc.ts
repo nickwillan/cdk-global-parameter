@@ -4,7 +4,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorAddress: 'https://github.com/nickwillan',
   keywords: ['aws', 'cdk', 'parameter', 'serverless,', 'ssm'],
   description: 'CDK Contstruct that creates a globally replicated Systems Manager String Parameter.',
-  majorVersion: 2,
+  majorVersion: 3,
   cdkVersion: '2.190.0',
   constructsVersion: '10.4.2',
   defaultReleaseBranch: 'main',
