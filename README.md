@@ -35,7 +35,7 @@ const globalParameter = new GlobalStringParameter(this, 'MyGlobalParameter', {
     description: 'A global parameter example',
   },
   tags: [{ Key: 'key1', Value: 'value1' }],
-  replicaRegions: ['us-east-1', 'us-west-2'],
+  replicaRegions: ['us-east-1', 'us-west-2', 'ca-central-1'],
 });
 ```
 
